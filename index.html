@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Viajes Chile</title>
     <!--Bootstap-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -23,12 +23,12 @@ referrerpolicy="no-referrer"
 
 </head>
 <body>
-
+ <!--nav combinado, inicio ; https://getbootstrap.esdocu.com/docs/5.3/components/navbar/#image-and-text-->
     <header>
         <nav class="navbar navbar-expand-lg fixed-top nav-color">
           <div class="container">
-            <a class="navbar-brand text-white" href="#">
-              <img src="./assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            <a class="navbar-brand text-white" href="#inicio">
+              <img src="./assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top ">
               Viajes Chile
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,16 +37,17 @@ referrerpolicy="no-referrer"
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link roboto-regular" aria-current="page" href="#inicio">Inicio</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link roboto-regular" href="#quienes-somos">Quienes Somos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#quienes-somos">Quienes Somos</a>
+                  <a class="nav-link roboto-regular" href="#destacados">Destacados</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#destacados">Destacados</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contacto">Contacto</a>
+                  <a class="nav-link roboto-regular" href="#contacto">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -57,8 +58,8 @@ referrerpolicy="no-referrer"
       
 
       <main>
-        <!--Carrousel-->
-        <section>
+        <!--Carrousel  link : https://getbootstrap.esdocu.com/docs/5.3/components/carousel/#basic-examples-->
+        <section id="inicio">
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -87,7 +88,7 @@ referrerpolicy="no-referrer"
         <section class="black">
             <div class="container text-center pb-4">
                 <div class="container border-bottom border-light-subtle text-white pb-4 pt-5">
-                    <h2 id="quienes-somos">¿Quiénes somos?</h2>
+                    <h2 id="quienes-somos" class="roboto-bold"> ¿Quiénes somos?</h2>
                 </div>
                 <div class="row align-items-start pt-5">
                     <div class="col-md-4">
@@ -96,14 +97,14 @@ referrerpolicy="no-referrer"
                                 <i class="fa-solid fa-plane text-white" ></i>
                             </div>
                         </div>
-                        <div>
-                            <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum excepturi, molestias maiores earum amet quas atque at perferendis, nulla laboriosam fugiat. Doloribus, debitis praesentium? Corporis, corrupti. Quos nostrum atque voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nostrum aperiam neque rerum. Maiores, dicta, neque quibusdam animi eos minus cumque laborum corporis dolor dolorem ducimus natus id numquam magni.</p>
+                        <div class="d-none d-md-block">
+                            <p class="text-center text-white roboto-regular">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum excepturi, molestias maiores earum amet quas atque at perferendis, nulla laboriosam fugiat. Doloribus, debitis praesentium? Corporis, corrupti. Quos nostrum atque voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nostrum aperiam neque rerum. Maiores, dicta, neque quibusdam animi eos minus cumque laborum corporis dolor dolorem ducimus natus id numquam magni.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         
                         <div>
-                            <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum excepturi, molestias maiores earum amet quas atque at perferendis, nulla laboriosam fugiat. Doloribus, debitis praesentium? Corporis, corrupti. Quos nostrum atque voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nostrum aperiam neque rerum. Maiores, dicta, neque quibusdam animi eos minus cumque laborum corporis dolor dolorem ducimus natus id numquam magni.</p>
+                            <p class="text-center text-white roboto-regular d-none d-md-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum excepturi, molestias maiores earum amet quas atque at perferendis, nulla laboriosam fugiat. Doloribus, debitis praesentium? Corporis, corrupti. Quos nostrum atque voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nostrum aperiam neque rerum. Maiores, dicta, neque quibusdam animi eos minus cumque laborum corporis dolor dolorem ducimus natus id numquam magni.</p>
                         </div>
                         <div class="d-flex justify-content-center mb-3" style="background-color: aqua;">
                             <div style="background-color: aqua;">
@@ -118,7 +119,7 @@ referrerpolicy="no-referrer"
                             </div>
                         </div>
                         <div>
-                            <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum excepturi, molestias maiores earum amet quas atque at perferendis, nulla laboriosam fugiat. Doloribus, debitis praesentium? Corporis, corrupti. Quos nostrum atque voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nostrum aperiam neque rerum. Maiores, dicta, neque quibusdam animi eos minus cumque laborum corporis dolor dolorem ducimus natus id numquam magni.</p>
+                            <p class="text-center text-white roboto-regular d-none d-md-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum excepturi, molestias maiores earum amet quas atque at perferendis, nulla laboriosam fugiat. Doloribus, debitis praesentium? Corporis, corrupti. Quos nostrum atque voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nostrum aperiam neque rerum. Maiores, dicta, neque quibusdam animi eos minus cumque laborum corporis dolor dolorem ducimus natus id numquam magni.</p>
                         </div>
                     </div>
                 </div>
@@ -126,11 +127,11 @@ referrerpolicy="no-referrer"
         </section>
         <!--Quienes somos-->
 
-        <!--Destacados-->
+        <!--Destacados  link: https://getbootstrap.esdocu.com/docs/5.3/components/card/#images-->
         <section class="black">
             <div class="container text-center " >
                 <div class="container border-bottom border-light-subtle text-white pb-4 pt-5">
-                    <h2 id="destacados">DESTACADOS</h2>
+                    <h2 id="destacados" class="roboto-bold">DESTACADOS</h2>
                 </div>
         
                 <div class="container ">
@@ -152,7 +153,7 @@ referrerpolicy="no-referrer"
                                             </div>
                                         </a>
                                         <div class="card-body" style="background-color: aqua;">
-                                            <p class="card-text ">
+                                            <p class="card-text roboto-regular">
                                                 Mus enim elementum dignissim class eleifend justo, ut nunc magnis est
                                                 vulputate nostra, blandit erat luctus faucibus orciblandit erat luctus faucibus
                                                 orci
@@ -168,13 +169,13 @@ referrerpolicy="no-referrer"
                             <div class="container">
                                 <section class="mx-auto my-3 auto" style="max-width: 23rem;">
         
-                                    <div class="card"><a href="#">
+                                    <div class="card"><a href="">
                                             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                                                 <img src="./assets/img/card2.jpg" class="img-fluid" />
                                             </div>
                                         </a>
                                         <div class="card-body" style="background-color: aqua;">
-                                            <p class="card-text ">
+                                            <p class="card-text roboto-regular">
                                                 Mus enim elementum dignissim class eleifend justo, ut nunc magnis est
                                                 vulputate nostra, blandit erat luctus faucibus orciblandit erat luctus faucibus
                                                 orci
@@ -187,13 +188,13 @@ referrerpolicy="no-referrer"
                         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                             <div class="container">
                                 <section class="mx-auto my-3 " style="max-width: 23rem;">
-                                    <div class="card"><a href="#">
+                                    <div class="card"><a href="">
                                             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                                                 <img src="./assets/img/card3.jpg" class="img-fluid" />
                                             </div>
                                         </a>
                                         <div class="card-body" style="background-color: aqua;">
-                                            <p class="card-text ">
+                                            <p class="card-text roboto-regular">
                                                 Mus enim elementum dignissim class eleifend justo, ut nunc magnis est
                                                 vulputate nostra, blandit erat luctus faucibus orciblandit erat luctus faucibus
                                                 orci
@@ -213,7 +214,7 @@ referrerpolicy="no-referrer"
                                             </div>
                                         </a>
                                         <div class="card-body" style="background-color: aqua;">
-                                            <p class="card-text " >
+                                            <p class="card-text roboto-regular " >
                                                 Mus enim elementum dignissim class eleifend justo, ut nunc magnis est
                                                 vulputate nostra, blandit erat luctus faucibus orciblandit erat luctus faucibus
                                                 orci
@@ -232,7 +233,7 @@ referrerpolicy="no-referrer"
         <section class="black">
             <section id="contacto" class="container">
                 <div class="container border-bottom border-light-subtle text-white pb-4 pt-5 text-center">
-                    <h2 id="contacto">CONTACTO</h2>
+                    <h2 id="contacto" class="roboto-bold">CONTACTO</h2>
                 </div>
                 
                 <form action="" class="pt-4">
@@ -276,12 +277,12 @@ referrerpolicy="no-referrer"
        
       </main>
 
-      
+      <!--footer-->
       <footer class="color-footer">
         <div class="container d-md-flex justify-content-around align-items-center text-white text-center pt-4">
-        <h3 class="fw-light">VIAJES CHILE</h3>
+        <h3 class="fw-light roboto-bold">VIAJES CHILE</h3>
         <div class="h2">
-          <a href="https://github.com/"
+          <a href="https://github.com/xSpookyDev/ProyectoFinalModulo2"
             target="_blank"
             class="text-decoration-none text-white p-1" >
             <i class="fab fa-github-square"></i>
@@ -306,12 +307,12 @@ referrerpolicy="no-referrer"
         </div>
       </div>
     </footer>
-    
+      <!--Fin footer-->
       
-
- 
   
   <!--Scripts-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
