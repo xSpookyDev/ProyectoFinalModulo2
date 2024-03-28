@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Ricardo Montecinos" />
+    <meta name="description" content="Proyecto vuelos" />
+    <meta
+      name="keywords"
+      content="viajes, viajar, html, bootcamp, , junior, programacion, vuelos"
+    />
     <title>Viajes Chile</title>
     <!--Bootstap-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 <!--ESTILOS CSS-->
 <link rel="stylesheet" href="./assets/css/styles.css">
+
+<!--icono-->
+<link rel="shortcut icon" href="./assets/img/viajes.ico" type="image/x-icon">
 
 <!--Font awesome-->
 <link
@@ -232,46 +241,47 @@ referrerpolicy="no-referrer"
         <!--Formulario-->
         <section class="black">
             <section id="contacto" class="container">
-                <div class="container border-bottom border-light-subtle text-white pb-4 pt-5 text-center">
-                    <h2 id="contacto" class="roboto-bold">CONTACTO</h2>
+              <div class="container border-bottom border-light-subtle text-white pb-4 pt-5 text-center">
+                <h2 id="contacto" class="roboto-bold">CONTACTO</h2>
+              </div>
+              
+              <form action="" class="pt-4">
+                <div class="mb-3">
+                  <label for="nombre" class="form-label text-white">Nombre:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    placeholder="Nombre"
+                  />
                 </div>
-                
-                <form action="" class="pt-4">
-                  <div class="mb-3">
-                    <label for="nombre" class="form-label text-white">Nombre:</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="nombre"
-                      placeholder="Nombre"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="correo" class="form-label text-white">Asunto</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="asunto"
-                      placeholder="Asunto"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="mensaje" class="form-label text-white">Mensaje</label>
-                    <textarea
-                      class="form-control"
-                      id="mensaje"
-                      rows="3"
-                      placeholder="Mensaje"
-                    ></textarea>
-                  </div>
-                  <div class="pb-4 text-start" >
-                    <button type="button" class="btn btn-info text-light " style="background-color: aqua;">
-                      Enviar
-                    </button>
-                  </div>
-                </form>
-              </section>
-        </section>
+                <div class="mb-3">
+                  <label for="correo" class="form-label text-white">Asunto</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="asunto"
+                    placeholder="Asunto"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label text-white">Mensaje</label>
+                  <textarea
+                    class="form-control"
+                    id="mensaje"
+                    rows="3"
+                    placeholder="Mensaje"
+                  ></textarea>
+                </div>
+                <div class="pb-4 text-start" >
+                  <button type="button" id="enviarBtn" class="btn btn-info text-light " style="background-color: aqua;">
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            </section>
+          </section>
+          
         
         <!--fin formularios-->
        

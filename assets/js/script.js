@@ -27,3 +27,13 @@ $(document).ready(function() {
       }
     });
   });
+
+  //simular envio de formulario
+  $(document).ready(function() {
+    $('#enviarBtn').on('click', function() {
+      setTimeout(function() {
+        alert('¡El formulario ha sido enviado con éxito!');
+        $('#enviarBtn').text('Enviado').attr('disabled', 'disabled');
+      }, 1500);
+    });
+  });
